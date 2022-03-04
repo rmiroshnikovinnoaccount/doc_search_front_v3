@@ -15,6 +15,7 @@ const PrivateRoutes: FC = () => {
           <Route path="admin-panel" element={<AdminPanel/>}/>
           <Route path="data-sources-connection" element={<DataSourcesConnection/>}/>
           <Route path="login" element={<Navigate to="/"/>}/>
+          <Route path="*" element={<Navigate to="/"/>}/>
         </Route>
       </Routes>
   );
